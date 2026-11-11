@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg-main text-tx-primary font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom subtle scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D0D2C8;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9CA39B;
+  }
+}
+
+/* React Flow Custom Overrides for Academic Editorial Style */
+.react-flow__attribution {
+  display: none !important;
+}
+
+.react-flow__handle {
+  border: 2px solid #FFFFFF !important;
+}
+
+.react-flow__controls-button {
+  background-color: #FFFFFF !important;
+  border-bottom: 1px solid #E4E5DE !important;
+  color: #222923 !important;
+}
+
+.react-flow__controls-button:hover {
+  background-color: #F5F5F0 !important;
+}
+
